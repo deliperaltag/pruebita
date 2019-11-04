@@ -5,11 +5,11 @@
 	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
-	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="f462358d-a412-49ee-9f1b-2ae3545a8a66" >
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="597c23d7-f373-447e-bf32-8eca03506445" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<flow name="pruebitaFlow" doc:id="ae2af7fe-ad0f-446e-9779-a74dcd97337d" >
-		<http:listener doc:name="Listener" doc:id="e43143f4-276f-489b-abd9-f6d1108194b6" config-ref="HTTP_Listener_config" path="/provider"/>
-		<set-payload value="#['hola mundo2']" doc:name="Set Payload" doc:id="ebd20e7a-da74-49ff-a726-bedda3a07618" />
+		<http:listener doc:name="Listener" doc:id="8982093a-461e-4bae-a350-1149fce482d0" config-ref="HTTP_Listener_config" path="/provider"/>
+		<set-payload value="#['hola mundo3']" doc:name="Set Payload" doc:id="ebd20e7a-da74-49ff-a726-bedda3a07618" />
 	</flow>
 </mule>
