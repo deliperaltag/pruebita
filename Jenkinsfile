@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'mvn clean package deploy -DmuleDeploy'
                 echo 'Building..'               
             }
         }
@@ -15,6 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+            	bat 'mvn clean package deploy -DmuleDeploy'
                 echo 'Deploying....'
             }
         }
