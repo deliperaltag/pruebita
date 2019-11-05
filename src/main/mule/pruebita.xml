@@ -10,6 +10,6 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
 	</http:listener-config>
 	<flow name="pruebitaFlow" doc:id="ae2af7fe-ad0f-446e-9779-a74dcd97337d" >
 		<http:listener doc:name="Listener" doc:id="8982093a-461e-4bae-a350-1149fce482d0" config-ref="HTTP_Listener_config" path="/provider"/>
-		<set-payload value="#['hola mundo9']" doc:name="Set Payload" doc:id="ebd20e7a-da74-49ff-a726-bedda3a07618" />
+		<set-payload value="#['hola mundo10']" doc:name="Set Payload" doc:id="ebd20e7a-da74-49ff-a726-bedda3a07618" />
 	</flow>
 </mule>
